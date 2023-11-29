@@ -22,11 +22,21 @@ class BlankFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank, container, false)
+        val view = inflater.inflate(R.layout.fragment_blank, container, false)
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        /*
+        progressBar.visibility = View.VISIBLE
+
+        if(requestg.isSuccess) {
+            progressBar.visibility = View.GONE
+        }
+        */
 
 
     }
